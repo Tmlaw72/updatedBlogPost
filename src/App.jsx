@@ -6,7 +6,7 @@ import './App.css'
 import IndividualPostPage from './components/blog/IndividualPostPage'; 
 import ContactPage from './contact/ContactPage';
 import BlogPostsPage from './postlist/BlogPostsPage';
-import Homepage from './homepage/homepage';
+import Homepage from './homepage/Homepage';
 
 function App() {
   return (

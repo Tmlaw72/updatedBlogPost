@@ -3,6 +3,7 @@ import Header from '../components/common/Header'
 import Footer from '../components/common/Footer'
 import BlogPost from '../components/blog/BlogPost'
 import {Link} from 'react-router';
+import './Landing.css'
 
 function Homepage() {
   return (

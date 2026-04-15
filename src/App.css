@@ -28,6 +28,11 @@
     }
 }
 
+.homepage{
+    background-color: darkblue;
+}
+
+
 .posting{
     background-color: darkblue;
     display: flex;

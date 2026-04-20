@@ -7,6 +7,7 @@ import IndividualPostPage from './components/blog/IndividualPostPage';
 import ContactPage from './contact/ContactPage';
 import BlogPostsPage from './postlist/BlogPostsPage';
 import Homepage from './homepage/Homepage';
+import LoginPage from './components/LoginPAge'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path="/" element={<Homepage />} />
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/postList/:post_id" element={<IndividualPostPage />} />
+      <Route path="/login" element={<LoginPage />} />
    </Routes>  
 
    /*

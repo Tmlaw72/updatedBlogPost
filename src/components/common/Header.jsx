@@ -1,11 +1,15 @@
 import React from "react";
 import {Link} from 'react-router';
+import { useContext } from 'react';
 
 function Header(){
+
+
     return(
         <div className="headerr">
             <h1 className="bg-white text-3xl p-3">Travel Blog</h1>
-            <h3>Log In</h3>
+            
+            <h3><Link to='/'>Log Out</Link></h3>
             <nav className="headerr">
                 <ul className="headerr">
                     <li className="headerr">

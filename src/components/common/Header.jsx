@@ -3,8 +3,6 @@ import {Link} from 'react-router';
 import { useContext } from 'react';
 
 function Header(){
-
-
     return(
         <div className="headerr">
             <h1 className="bg-white text-3xl p-3">Travel Blog</h1>

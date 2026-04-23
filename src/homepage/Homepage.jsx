@@ -9,7 +9,7 @@ function Homepage() {
   return (
     <div className='homepage'>
     <h1>Welcome to the Travel Blog</h1>
-    <Link to="/login">Log In</Link>
+    <Link to="/login" className='button-style'>Log In</Link>
     <br></br>
     <Link to="/postlist" id='button2'>View Blog Posts</Link>
     <br></br>

@@ -2,10 +2,12 @@ import React, { useRef, useState, useEffect } from 'react';
 import IndividualComment from './IndividualComment';
 import { useParams } from 'react-router';
 import axios from 'axios';
+import { useUsername } from '../authWrapper/AuthContext';
 
-function Comments(){
+function Comments(props){
     const params = useParams();
-    console.log(params.post_id);
+    const username = useUsername();
+
     
     const [comment, setComment] = useState({
         name: "",
@@ -81,11 +83,12 @@ function Comments(){
             <button onClick={postComment} type="submit" id="button1">Submit</button>
             {commentData.length === 0 ? <p className='comment'>There are no comments to display... it's quiet</p> : <div className='comment'>
             <h3>Existing Comments:</h3>
+            {username ?
             <ul className="comment">
                {commentData.map((value, index) => (
                     <li key={value.id}><IndividualComment name={value.name} content={value.body}/></li>
                 ))}
-            </ul>
+            </ul> : <p>Log in to see comments!</p>}
             </div>}
         </div>
     ); 

@@ -7,11 +7,12 @@ import IndividualPostPage from './components/blog/IndividualPostPage';
 import ContactPage from './contact/ContactPage';
 import BlogPostsPage from './postlist/BlogPostsPage';
 import Homepage from './homepage/Homepage';
-import LoginPage from './components/LoginPAge'
+import LoginPage from './components/LoginPage';
+import { AuthProvider } from './components/authWrapper/AuthProvider';
 
 function App() {
   return (
-  
+   <AuthProvider>
    <Routes>
       <Route path="/postlist" element={<BlogPostsPage />} />
       <Route path="/" element={<Homepage />} />
@@ -19,6 +20,8 @@ function App() {
       <Route path="/postList/:post_id" element={<IndividualPostPage />} />
       <Route path="/login" element={<LoginPage />} />
    </Routes>  
+   </AuthProvider>
+
 
    /*
      <div>
